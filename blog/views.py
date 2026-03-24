@@ -44,7 +44,7 @@ def create(request):
       tag = tag.strip()
 
       new_hashtag=Hashtag.objects.get_or_create(hashtag=tag)
-      
+
       new_blog.hashtag.add(new_hashtag[0])
 
     return redirect('detail', new_blog.id)
@@ -78,6 +78,7 @@ def update_post(request, post_id):
  return redirect('blog:home')
 
 def add_comment(request, post_id):
+
 
  blog = get_object_or_404(Post, pk=post_id)
 
