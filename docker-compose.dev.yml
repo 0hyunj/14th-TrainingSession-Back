@@ -10,7 +10,6 @@ services:
     volumes:
       - .:/app
 
-
   # 2. 새로 추가할 Redis 서비스
   redis:
     image: redis:alpine
