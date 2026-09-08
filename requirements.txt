@@ -23,3 +23,6 @@ sqlparse==0.5.5
 typing_extensions==4.16.0
 tzdata==2025.3
 whitenoise==6.12.0
+boto3==1.37.38
+botocore==1.37.38
+django-storages==1.14.5
